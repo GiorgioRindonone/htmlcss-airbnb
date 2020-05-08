@@ -8,6 +8,7 @@
   width: 100vw;
   height: 300px;
   background-image: url(../img/vienna.jpg);
+  background-position: top;
   background-size: cover;
   position: relative;
 }
@@ -16,6 +17,7 @@
   width: 100vw;
   height: 300px;
   background-image: url(../img/amburgo.jpg);
+  background-position: top;
   background-size: cover;
   position: relative;
 }
@@ -24,15 +26,34 @@
   width: 100vw;
   height: 300px;
   background-image: url(../img/napoli.jpg);
+  background-position: top;
   background-size: cover;
   position: relative;
 }
-/* layover blocchi */
-.lay .layover {
+/* layover blocchi neri*/
+.layover {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
+  display: block;
 }
+
+/* layer over rossi */
+.layh{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(201, 0, 44, 0.2);
+  display: none;
+}
+/* hover appare */
+.lay:hover .layh{
+  display: block;
+}
+/* hover scompare */
+.lay:hover .layover{
+  display: none;
+}
+
 /* titolo centrato */
 .title {
   position: absolute;
